@@ -1,10 +1,12 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { navbarData } from "../utils/navbar";
+import Header from "../components/Header";
 
 const Root = () => {
     return (
         <React.Fragment>
+            <Header/>
             <Routes>
                 <Route path = "/" element = {<Navigate to = "/home" />} /> 
                 {
